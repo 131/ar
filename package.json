@@ -1,0 +1,14 @@
+{
+  "name": "animationrecorder",
+  "main": "index.html",
+  "chromium-args": "--explicitly-allowed-ports=6000",
+  "window": {
+    "show": false
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "nwconsole": "*",
+    "nyks": "*",
+    "tmp": "0.0.25"
+  }
+}
