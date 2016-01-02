@@ -1,7 +1,7 @@
-require('nyks');
 var console   = require('nwconsole'),
     util      = require('util');
 
+var parseargs = require('nyks/process/parseargs');
 
 
 var nw = !!global.window;
@@ -11,14 +11,16 @@ if(nw) {
 }
 
 var args = nw ? gui.App.argv : process.argv.splice(2),
-    dict = util.parseargs(args).dict;
+    dict = parseargs(args).dict;
 
+
+console.log(dict);
 
 var App = require('./lib/ar.js');
 
 var app = new App(dict);
 
-process.on('uncaughtException', function(err) {
+if(false) process.on('uncaughtException', function(err) {
     // handle the error safely
     console.error(err);
 });

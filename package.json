@@ -7,8 +7,11 @@
   },
   "dependencies": {
     "async": "^0.9.0",
+    "mout": "^0.11.1",
     "nwconsole": "*",
-    "nyks": "*",
-    "tmp": "0.0.25"
+    "nyks": "^2.1.1",
+    "tmp": "0.0.25",
+    "screen-capture-recorder": "0.10.0",
+    "uclass": "^2.0.7"
   }
 }
