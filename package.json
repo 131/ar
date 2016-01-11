@@ -5,6 +5,7 @@
   "window": {
     "show": false
   },
+  "version": "0.1.0",
   "dependencies": {
     "async": "^0.9.0",
     "mout": "^0.11.1",
@@ -14,5 +15,28 @@
     "screen-capture-recorder": "1.2.0",
     "tmp": "0.0.25",
     "uclass": "^2.0.7"
-  }
+  },
+  "description": "= Animation recorder\r Convert API compliant HTML5 or SWF animations to video using VLC screengrab features.",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/131/ar.git"
+  },
+  "keywords": [
+    "html5",
+    "vlc",
+    "recorder"
+  ],
+  "author": "Francois Leurent <131.js@cloudyks.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/131/ar/issues"
+  },
+  "homepage": "https://github.com/131/ar"
 }
