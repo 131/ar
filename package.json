@@ -1,14 +1,18 @@
 {
   "name": "animationrecorder",
   "main": "index.html",
-  "chromium-args": "--explicitly-allowed-ports=6000",
+  "chromium-args": "--mixed-context --allow-file-access-from-files --explicitly-allowed-ports=6000",
   "window": {
-    "show": false
+    "show": true,
+		"frame" : false,
+		"toolbar" : false
   },
   "dependencies": {
     "async": "^0.9.0",
-    "nwconsole": "*",
-    "nyks": "*",
-    "tmp": "0.0.25"
+    "nwconsole": "^1.0.0",
+    "nyks": "2.30.0",
+    "tmp": "0.0.25",
+    "uclass": "~2.4.0",
+    "mout": "~1.0.0"
   }
 }

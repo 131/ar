@@ -1,18 +1,19 @@
 require('nyks');
-var console   = require('nwconsole'),
-    util      = require('util');
 
+var console   = require('nwconsole'),
+    parseargs = require('nyks/process/parseargs');
+console.log('IT WORKs !');
 
 
 var nw = !!global.window;
 var gui;
 if(nw) {
-  gui = global.window.nwDispatcher.requireNwGui();
+  //gui = global.window.nwDispatcher.requireNwGui();
+  gui = window.require('nw.gui');
 }
 
 var args = nw ? gui.App.argv : process.argv.splice(2),
-    dict = util.parseargs(args).dict;
-
+    dict = parseargs(args).dict;
 
 var App = require('./lib/ar.js');
 
