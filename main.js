@@ -1,24 +1,21 @@
-var console   = require('nwconsole'),
-    util      = require('util');
+"use strict";
 
-var parseargs = require('nyks/process/parseargs');
-
-
-var nw = !!global.window;
-var gui;
-if(nw) {
-  gui = global.window.nwDispatcher.requireNwGui();
-}
-
-var args = nw ? gui.App.argv : process.argv.splice(2),
-    dict = parseargs(args).dict;
+const co        = require('co');
+const util      = require('util');
+const parseargs = require('nyks/process/parseargs');
 
 
-console.log(dict);
+const nw = !!global.window;
+const gui = nw ? window.require('nw.gui') : null;
 
-var App = require('./lib/ar.js');
 
-var app = new App(dict);
+const args = nw ? gui.App.argv : process.argv.splice(2);
+const dict = parseargs(args).dict;
+
+
+
+const App = require('./lib/ar.js');
+const app = new App(dict);
 
 if(false) process.on('uncaughtException', function(err) {
     // handle the error safely
@@ -26,10 +23,9 @@ if(false) process.on('uncaughtException', function(err) {
 });
 
 console.log("Initializing app");
+console.log("Starting GUI");
 
 
-  console.log("Starting GUI");
-  app.run();
-
-if(nw) {
-}
+co(function* (){
+  yield app.run();
+});
