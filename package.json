@@ -18,7 +18,8 @@
     "screen-capture-recorder": "^1.3.0",
     "swf-properties": "^1.0.1",
     "tmp": "0.0.25",
-    "udom": "^1.6.1"
+    "udom": "^1.6.1",
+    "winapi": "^2.4.0"
   },
   "description": "= Animation recorder\r Convert API compliant HTML5 or SWF animations to video using VLC screengrab features.",
   "directories": {
