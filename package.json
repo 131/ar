@@ -3,7 +3,7 @@
   "main": "index.html",
   "chromium-args": "--explicitly-allowed-ports=6000 --mixed-context",
   "window": {
-    "show": true
+    "show": false
   },
   "webkit": {
     "plugin": true
