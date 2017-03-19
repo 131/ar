@@ -25,6 +25,9 @@
   "directories": {
     "test": "tests"
   },
+  "os": [
+    "win32"
+  ],
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
