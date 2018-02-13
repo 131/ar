@@ -1,7 +1,7 @@
 {
   "name": "animationrecorder",
   "main": "index.html",
-  "chromium-args": "--explicitly-allowed-ports=6000 --mixed-context",
+  "chromium-args": "--explicitly-allowed-ports=6000 --mixed-context --user-data-dir=./.nwjscache",
   "window": {
     "show": false
   },
