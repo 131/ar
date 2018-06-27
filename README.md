@@ -6,11 +6,13 @@ Use VLC remote-control interface (TCP control interface) to sync events (see [sc
 [![Version](https://img.shields.io/npm/v/animationrecorder.svg)](https://www.npmjs.com/package/animationrecorder)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 ![Available platform](https://img.shields.io/badge/platform-win32-blue.svg)
+[![Code style](https://img.shields.io/badge/code%2fstyle-ivs-green.svg)](https://www.npmjs.com/package/eslint-plugin-ivs)
+
 
 # API/Usage
 
 ```
-nw path/to/ar/ --mode=swf|html5 --source_path=[SOURCE_PATH] --output_path=[OUTPUT_PATH]
+nw26 path/to/ar/ --mode=swf|html5 --source_path=[SOURCE_PATH] --output_path=[OUTPUT_PATH]
 ```
 
 ## Extra options
