@@ -16,15 +16,12 @@
     "nyks": "^5.5.0",
     "screen-capture-recorder": "^2.0.1",
     "swf-properties": "^1.0.1",
-    "winapi": "^2.6.0"
+    "screen-rotation": "^1.1.0"
   },
   "description": "= Animation recorder\r Convert API compliant HTML5 or SWF animations to video using VLC screengrab features.",
   "directories": {
     "test": "tests"
   },
-  "os": [
-    "win32"
-  ],
   "devDependencies": {
     "eslint-plugin-ivs": "^1.3.0"
   },
