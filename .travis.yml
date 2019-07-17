@@ -1,14 +1,14 @@
 language: node_js
 node_js:
 - 8
-deploy:
-  skip_cleanup: true
-- npm whoami
 after_script:
 - npm run coveralls
 deploy:
+  skip_cleanup: true
   provider: npm
   email: 131.frodon@cloudyks.org
   api_key: $NPM_TOKEN
   on:
     tags: true
+after_deploy:
+- npm whoami
