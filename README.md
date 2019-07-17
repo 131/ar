@@ -3,6 +3,7 @@ Convert API compliant HTML5 or SWF animations to video using VLC screengrab feat
 
 Use VLC remote-control interface (TCP control interface) to sync events (see [screen-capture-recorder](https://github.com/131/screen-recorder)) 
 
+[![Build Status](https://travis-ci.org/131/ar.svg?branch=master)](https://travis-ci.org/131/ar)
 [![Version](https://img.shields.io/npm/v/animationrecorder.svg)](https://www.npmjs.com/package/animationrecorder)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 ![Available platform](https://img.shields.io/badge/platform-win32-blue.svg)
@@ -12,7 +13,7 @@ Use VLC remote-control interface (TCP control interface) to sync events (see [sc
 # API/Usage
 
 ```
-nw26 path/to/ar/ --mode=swf|html5 --source_path=[SOURCE_PATH] --output_path=[OUTPUT_PATH]
+nw26 path/to/ar/ --recorder=vlc|ffmpeg --mode=swf|html5 --source_path=[SOURCE_PATH] --output_path=[OUTPUT_PATH]
 ```
 
 ## Extra options
