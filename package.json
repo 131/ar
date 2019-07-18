@@ -14,7 +14,7 @@
     "fs-extra": "^3.0.1",
     "mout": "^1.0.0",
     "nyks": "^5.5.0",
-    "screen-capture-recorder": "3.0.1",
+    "screen-capture-recorder": "3.0.2",
     "screen-rotation": "^1.2.2",
     "swf-properties": "^1.0.1"
   },
